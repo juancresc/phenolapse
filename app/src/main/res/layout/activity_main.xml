@@ -21,15 +21,15 @@
                 android:layout_height="wrap_content" android:id="@+id/btn_agregar_alarma"/>
         <ImageView
                 android:id="@+id/image_last"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="395dp"
+                android:layout_height="307dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:scaleType="centerInside"
+                android:scaleType="fitEnd"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent" android:background="#2C8D8D8D">
 
         </ImageView>
     </LinearLayout>

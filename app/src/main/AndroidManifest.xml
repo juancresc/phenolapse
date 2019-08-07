@@ -17,6 +17,9 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".CamActivity" >
+
+        </activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.example.phenolapse.fileprovider"
