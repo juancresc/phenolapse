@@ -12,8 +12,25 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn_captura"/>
+        <Button
                 android:text="Agregar alarma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/btn_agregar_alarma"/>
+        <ImageView
+                android:id="@+id/image_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
