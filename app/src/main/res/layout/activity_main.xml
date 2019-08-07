@@ -1,36 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CamActivity">
+
     <LinearLayout
-            android:id="@+id/root_container"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <Button
-                android:text="Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/btn_captura"/>
-        <Button
-                android:text="Agregar alarma"
+                android:text="Schedule photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/btn_agregar_alarma"/>
-        <ImageView
-                android:id="@+id/image_last"
-                android:layout_width="395dp"
-                android:layout_height="307dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:scaleType="fitEnd"
-                android:layout_marginTop="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" android:background="#2C8D8D8D">
+        <Button
+            android:text="Take picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btn_captura"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </ImageView>
+                <LinearLayout android:layout_weight="1" android:layout_height="fill_parent"
+                              android:layout_width="match_parent">
+                    <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                      android:orientation="vertical" android:id="@+id/layout_alarms"/>
+                    </ScrollView>
+                </LinearLayout>
+            <LinearLayout android:layout_weight="1" android:layout_height="fill_parent"
+                          android:layout_width="fill_parent" android:gravity="center_horizontal">
+                <ImageView
+                        android:id="@+id/image_last"
+                        android:layout_centerInParent="true"
+                        android:layout_width="300dip"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_horizontal"
+
+                        app:layout_constraintTop_toTopOf="parent" android:background="#2C8D8D8D">
+                </ImageView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

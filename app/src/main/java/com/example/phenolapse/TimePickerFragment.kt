@@ -34,7 +34,7 @@ class TimePickerFragment:DialogFragment(), TimePickerDialog.OnTimeSetListener {
         override fun onTimeSet(view:TimePicker, hourOfDay:Int, minute:Int) {
             var hora =  "Hour : " + hourOfDay.toString() + "\nMinute : " + minute.toString()
 
-            val linearLayout = activity.findViewById<LinearLayout>(R.id.root_container)
+            val linearLayout = activity.findViewById<LinearLayout>(R.id.layout_alarms)
 
             // Create Button Dynamically
             val btnShow = Button(activity)
