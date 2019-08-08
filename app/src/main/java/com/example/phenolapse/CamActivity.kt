@@ -74,7 +74,6 @@ class CamActivity : HiddenCameraActivity() {
             .setCameraFacing(CameraFacing.REAR_FACING_CAMERA)
             .setCameraResolution(CameraResolution.HIGH_RESOLUTION)
             .setImageFormat(CameraImageFormat.FORMAT_JPEG)
-            .setImageRotation(CameraRotation.ROTATION_270)
             .setCameraFocus(CameraFocus.AUTO)
             .build()
 

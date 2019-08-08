@@ -16,9 +16,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/btn_agregar_alarma"/>
         <Button
-            android:text="Take picture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btn_captura"/>
+                android:text="Take picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn_captura"/>
+        <TextView
+                android:text="Current scheduled photos:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewTex"/>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"

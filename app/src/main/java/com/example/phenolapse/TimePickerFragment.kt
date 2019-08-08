@@ -33,15 +33,18 @@ class TimePickerFragment:DialogFragment(), TimePickerDialog.OnTimeSetListener {
     }
         override fun onTimeSet(view:TimePicker, hourOfDay:Int, minute:Int) {
             var hora =  "Hour : " + hourOfDay.toString() + "\nMinute : " + minute.toString()
-
             val linearLayout = activity.findViewById<LinearLayout>(R.id.layout_alarms)
-
             // Create Button Dynamically
             val btnShow = Button(activity)
-            btnShow.setText(hora )
-            btnShow.layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+            btnShow.width=ViewGroup.LayoutParams.MATCH_PARENT
+            btnShow.setText(hora)
+            btnShow.layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+
+            //set remove function
             //btnShow.setOnClickListener { Toast.makeText(activity, R.string.welcome_message, Toast.LENGTH_LONG).show() }
-            // Add Button to LinearLayout
+            //set color of button btnShow.colo
+            //add alarm intent https://developer.android.com/training/scheduling/alarms
+            //persist alarm
             linearLayout?.addView(btnShow)
 
     }
